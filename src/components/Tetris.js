@@ -57,7 +57,7 @@ const Tetris = () => {
 
     }
     //Destructured event key code passeed in so no need to access event.keyCode inside the move function 
-    const move = ({ event, keyCode }) => {
+    const move = ({ keyCode }) => {
         if (!gameOver) {
             if (keyCode === 37) {
                 movePlayer(-1);
