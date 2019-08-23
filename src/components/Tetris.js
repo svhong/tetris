@@ -1,7 +1,10 @@
+
 import React, { useState } from "react";
 
+//styled components
 import { StyledTetrisWrapper, StyledTetris } from "./styles/StyledTetris";
 
+//custom hooks
 import { usePlayer } from "./hooks/usePlayer";
 import { useStage } from "./hooks/useStage";
 
