@@ -10,7 +10,7 @@ import { StyledTetrisWrapper, StyledTetris } from "./styles/StyledTetris";
 import { useInterval } from "./hooks/useInterval";
 import { usePlayer } from "./hooks/usePlayer";
 import { useStage } from "./hooks/useStage";
-import { useGameStatus } from "./hooks/useGameStatus"
+import { useGameStatus } from "./hooks/useGameStatus";
 
 import Stage from "./Stage";
 import Display from "./Display";
@@ -109,7 +109,7 @@ const Tetris = () => {
         >
             <StyledTetris>
                 <Stage stage={stage} />
-                <aside>
+                <aside className="display-container">
                     {gameOver ? (
                         <Display gameOver={gameOver} text="Game Over" />
                     ) : (

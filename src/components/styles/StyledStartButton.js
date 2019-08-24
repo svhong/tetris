@@ -13,4 +13,5 @@ export const StyledStartButton = styled.button`
     font-size:1rem;
     outline:none;
     cursor:pointer;
+    position:relative;
 `
