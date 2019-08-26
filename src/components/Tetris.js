@@ -15,6 +15,9 @@ import { useGameStatus } from "./hooks/useGameStatus";
 import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
+import BgMusic from "./BgMusic";
+
+import blockMusic from "../audio/blockmusic.mp3";
 
 const Tetris = () => {
     const [dropTime, setDropTime] = useState(null);
@@ -89,7 +92,7 @@ const Tetris = () => {
                 dropPlayer();
             } else if (keyCode === 83) {
                 playerRotate(stage, 1);
-            } else if (keyCode === 65) {
+            } else if (keyCode === 65 || keyCode === 38) {
                 playerRotate(stage, -1);
             }
 
@@ -120,6 +123,7 @@ const Tetris = () => {
                             </div>
                         )}
                     <StartButton callback={startGame} />
+                    <BgMusic url={blockMusic} />
                 </aside>
             </StyledTetris>
         </StyledTetrisWrapper>
