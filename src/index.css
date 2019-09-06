@@ -7,3 +7,9 @@ body {
   font-family: "Pixel";
   src:url("font/Pixel-LCD-7.woff") format("woff")
 }
+
+.display-container{
+  position:relative;
+  left: 40%;
+  transform:translate(-50%);
+}
